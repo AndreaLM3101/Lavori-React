@@ -44,7 +44,7 @@ const Login = ({ onLogin }) => {
             checked={remember}
             onChange={(e) => setRemember(e.target.checked)}
           />
-          Remember Me
+          Ricordami
         </label>
       </div>
       <div>

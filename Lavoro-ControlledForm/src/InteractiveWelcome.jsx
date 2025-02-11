@@ -6,12 +6,7 @@ const InteractiveWelcome = () => {
 
   return (
     <div>
-      <input
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder="Enter your name"
-      />
+      <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder="Nome"/>
       <Welcome name={name} />
     </div>
   );

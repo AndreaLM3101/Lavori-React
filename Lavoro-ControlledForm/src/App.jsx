@@ -4,7 +4,7 @@ import Login from "./Login";
 
 const App = () => {
   const handleLogin = (state) => {
-    console.log("Login State:", state);
+    console.log("Login:", state);
   };
 
   return (

@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.welcome {
+    background-color: rgb(167, 43, 43);
+    border: 5px solid black;
+  }

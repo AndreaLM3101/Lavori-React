@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.welcome {
+    background-color: rgb(167, 43, 43);
+    border: 5px solid black;
+  }
+
+.appContainer {
+  background-color: white;
+  border: 5px solid red;
+}
+
+.styleTitolo {
+  color: blue;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.appContainerHiden {
+  display: none;
+}

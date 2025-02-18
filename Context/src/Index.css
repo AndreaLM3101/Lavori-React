@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+.welcome {
+    background-color: rgb(167, 43, 43);
+    border: 5px solid black;
+  }
+
+.appContainer {
+  background-color: white;
+  border: 5px solid red;
+}
+
+.styleTitolo {
+  color: blue;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.appContainerHiden {
+  display: none;
+}
+
+.styleHelloIt {
+  color: rgb(0, 164, 19);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.styleHelloEn {
+  color: rgb(233, 233, 233);
+  background: #000;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.styleHelloFr {
+  color: rgb(164, 5, 0);
+  font-weight: 500;
+  font-size: 18px;
+}

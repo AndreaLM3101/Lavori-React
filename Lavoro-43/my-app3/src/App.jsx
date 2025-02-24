@@ -1,16 +1,17 @@
 import React from "react";
-import Hello from "./Hello";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Welcome from "./Welcome";
+import Counter from "./Counter";
 
 function App() {
   return (
-    <div>
-      <Hello />
-      <Welcome name="Andrea" age={25} surname="Lo Muto" />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Welcome name="Andrea" />} />
+        <Route path="/counter" element={<Counter initialValue={0} />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
 export default App;
-
-

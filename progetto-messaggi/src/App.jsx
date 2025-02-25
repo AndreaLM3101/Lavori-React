@@ -4,8 +4,9 @@ import ContenitoreChat from "./ContenitoreChat";
 function App() {
   const [messages, setMessages] = useState([]);
 
-  const addMessage = (newMessage) =>
-    newMessage.trim() && setMessages([...messages, newMessage]);
+  const addMessage = (newMessage) => {
+    setMessages([...messages, newMessage]);
+  };
 
   return (
     <div className="h-screen flex flex-col bg-gray-100">

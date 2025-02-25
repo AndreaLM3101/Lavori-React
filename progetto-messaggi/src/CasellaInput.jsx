@@ -4,11 +4,17 @@ function CasellaInput({ onSendMessage }) {
   const [newMessage, setNewMessage] = useState("");
 
   const handleSend = () => {
-    if (newMessage.trim() !== "") {
+    if (newMessage.trim() !== "") {  // Se il messaggio non è vuoto o fatto solo di spazi
       onSendMessage(newMessage);
-      setNewMessage("");
+      setNewMessage("");  // Reset dell'input dopo l'invio
     }
   };
+
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter" && newMessage.trim() !== "") { // Quando viene premuto Enter e il messaggio non è vuoto
+      handleSend();
+    }
+  }; // Sistema per gestire l'invio quando si preme "invio" (si ho cercato)
 
   return (
     <div className="flex p-4 bg-white border-t">
@@ -18,14 +24,14 @@ function CasellaInput({ onSendMessage }) {
         placeholder="Messaggio"
         value={newMessage}
         onChange={(e) => setNewMessage(e.target.value)}
+        onKeyDown={handleKeyPress}  // Modifica: aggiunto evento per la pressione del tasto "Enter"
       />
       <button
         className="ml-2 px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600"
-        onClick={handleSend}
+        onClick={handleSend}  // Invia il messaggio solo se non è vuoto
       >
-        ^
+        Send
       </button>
-      
     </div>
   );
 }

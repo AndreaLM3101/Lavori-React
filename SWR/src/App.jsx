@@ -8,6 +8,7 @@ import { LanguageContext } from "./LanguageContext";
 import { Hello } from "./Hello";
 import UseGithubUser from "./GithubUser";  
 import Location from "./Location";
+import GithubUser from "./GithubUser";
 
 const fetcher = (url) => fetch(url).then((res) => res.json()); // Funzione fetcher da GithubUser.jsx
 
@@ -37,7 +38,7 @@ const App = () => {
 
           <Login onLogin={handleLogin} />
           <Counter initialValue={0} />
-          <UseGithubUser username="" /> 
+          <GithubUser username="AndreaLM3101" /> 
           <Location />
         </Container>
       </SWRConfig>

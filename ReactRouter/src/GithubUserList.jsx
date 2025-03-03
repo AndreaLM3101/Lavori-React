@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 function GithubUserList() {
   const [users, setUsers] = useState([]);
@@ -17,6 +17,7 @@ function GithubUserList() {
   return (
     <div>
       <h2>GitHub Users</h2>
+      <Outlet />
       <ul>
         {users.map((user) => (
           <li key={user.id}>
